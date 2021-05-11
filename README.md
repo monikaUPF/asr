@@ -1,6 +1,6 @@
-## CONNEXIONs ASR Python
+## ASR
 
-This repository contains the wav2letter flashlight-based ASR adapted for the CONNEXIONs project.
+This repository contains the wav2letter++ flashlight-based ASR cloned from an implentation by Guillermo Cambara and Roberto Carlini (members of TALN-UPF).
 
 In order to use the provided images, you'll have to download and extract the model/s that you want to use. You'll find models for English, German and Portuguese [here](https://drive.google.com/drive/folders/1BNdkEUjSJwvDm7tKKpy3g-aBNOuaw_vt?usp=sharing).
 
