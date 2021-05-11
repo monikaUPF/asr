@@ -1,6 +1,6 @@
 ## ASR
 
-This repository contains the Wav2Letter++ ASR Docker architecture, originally deployed by Guillermo Cambara and Roberto Carlini (members of TALN-UPF).
+This repository contains the Wav2Letter++ ASR Docker container, originally deployed by Guillermo Cambara and Roberto Carlini (members of TALN-UPF).
 
 In order to use the provided images, you'll have to download and extract the model for English [here](https://drive.google.com/file/d/1pFSoE3B_OJ2JinnR-bQwpdWMEcS1B0FD/view?usp=sharing).
 
