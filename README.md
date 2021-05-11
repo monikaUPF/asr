@@ -10,6 +10,3 @@ Finally, assuming you have docker-compose already installed, execute:
 ```docker-compose -f docker-compose.dev.yml up integration speech2text```
 
 This command will start speech2text service (at localhost:4200) and the demo interface (at localhost:4100).
-
-If you want just to process a batch of wav files, run this command instead:  
-```docker run -v [BATCH_PATH]:/data/audio -v [PATH TO CHOSEN ASR]:/ASR speech2text:flashlight python3 transcriber.py --cfg /ASR/conf/decode.cfg --wav /data```
