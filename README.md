@@ -1,4 +1,5 @@
-## ASR
+## ASR test repository for Advances in Speech Technologies Course 
+(Data Science Degree, Universitat Pompeu Fabra, BCN, Spain)
 
 This repository contains the Wav2Letter++ ASR Docker container, originally deployed by Guillermo Cambara and Roberto Carlini (members of TALN-UPF).
 
