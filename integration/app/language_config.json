@@ -1,0 +1,7 @@
+{
+    "speech2text": {
+        "default": "http://speech2text/speech2text"
+    },
+    "translation": {},
+    "text2speech": {}
+}

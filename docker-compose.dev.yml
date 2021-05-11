@@ -1,0 +1,32 @@
+version: '3.2'
+services:
+
+    integration:
+        build: integration/
+        depends_on:
+            - speech2text
+
+        command: /start-reload.sh
+        volumes:
+            - ./integration/app:/app
+
+        ports: 
+            - "4100:80"
+
+    speech2text:
+        build: 
+            context: speech2text/
+            dockerfile: Dockerfile
+        image: speech2text:flashlight
+        volumes:
+            # - [REPLACE BY PATH TO RESOURCES DIR]/en/RASR_20200305/ASR:/ASR
+            - /home/monika/speech/asr/models_wav2letter/de/MLS_20200503/ASR:/ASR
+            # - [REPLACE BY PATH TO RESOURCES DIR]/pt/MLS_20200503/ASR:/ASR
+            # - [REPLACE BY PATH TO RESOURCES DIR]/it/MLS_20200503/ASR:/ASR
+            #-docker run -v /home/monika/Desktop/connexions/test:/data/audio -v /home/monika/speech/asr/models_wav2letter/de/MLS_20200503/ASR:/ASR speech2text:flashlight python3 transcriber.py --cfg /ASR/conf/decode.cfg --wav /data /opt/extra_space/code/projects/ingenious/speech2text/flashlight/it/MLS_20200503/ASR:/ASR
+            - ./speech2text/transcriber.py:/app/transcriber.py
+            - ./speech2text/app.py:/app/app.py
+        environment: 
+            - CONFIG_FILE=/ASR/conf/decode.cfg
+        ports:
+            - "4200:80"

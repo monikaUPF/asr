@@ -1,0 +1,4 @@
+Flask==1.0.2
+werkzeug==0.16.0
+redis==3.3.11
+sox==1.3.7

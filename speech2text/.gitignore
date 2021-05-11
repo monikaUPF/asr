@@ -1,0 +1,14 @@
+.idea
+.vscode/
+.DS_Store
+venv/
+
+**/__pycache__/
+
+*.wav
+*.tar.gz
+
+**/lm
+**/models
+**/data
+**/results
